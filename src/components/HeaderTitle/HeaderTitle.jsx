@@ -1,5 +1,5 @@
-import './HeaderTitle.css';
+import StyledHeaderTitle from './StyledHeaderTitle';
 
-const HeaderTitle = () => <h2 className="HeaderTitle">Dark Mode Example</h2>
+const HeaderTitle = () => <StyledHeaderTitle>Dark Mode Example</StyledHeaderTitle>
 
 export default HeaderTitle;
