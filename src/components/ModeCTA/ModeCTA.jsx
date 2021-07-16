@@ -1,12 +1,11 @@
-import { BsMoon } from 'react-icons/bs';
-import "./ModeCTA.css"
+import { StyledModeCTA, StyledMoonIcon } from "./StyledModeCTA";
 
 const ModeCTA = () => {
   return (
-    <button className="ModeCTA">
-      <BsMoon className="MoonIcon"/>
+    <StyledModeCTA>
+      <StyledMoonIcon />
       Dark Mode
-    </button>
+    </StyledModeCTA>
   )
 }
 
