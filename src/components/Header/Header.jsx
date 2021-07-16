@@ -1,13 +1,13 @@
+import StyledHeader from './StyledHeader';
 import HeaderTitle from '../HeaderTitle/HeaderTitle';
 import ModeCTA from '../ModeCTA/ModeCTA';
-import './Header.css';
 
 const Header = ({ children }) => {
   return (
-    <header className="Header">
+    <StyledHeader>
       <HeaderTitle />
       <ModeCTA />
-    </header>
+    </StyledHeader>
   )
 }
 
