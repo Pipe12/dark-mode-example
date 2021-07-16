@@ -1,0 +1,14 @@
+.ModeCTA {
+  background-color: transparent;
+  border: none;
+  color: var(--dark-mode-text);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ModeCTA .MoonIcon {
+  margin-right: 8px;
+}

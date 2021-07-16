@@ -1,11 +1,13 @@
+import Container from './components/Container/Container';
+import Header from './components/Header/Header';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Dark mode example
-      </header>
+      <Container>
+        <Header />
+      </Container>
     </div>
   );
 }

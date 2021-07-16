@@ -1,14 +1,13 @@
 .App {
-  text-align: center;
-}
+  border: 1px solid purple;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+
+  background-color: var(--dark-mode-background);
 }
