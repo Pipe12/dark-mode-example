@@ -1,14 +1,14 @@
+import StyledApp from './StyledApp'
 import Container from '../components/Container/Container';
 import Header from '../components/Header/Header';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <StyledApp>
       <Container>
         <Header />
       </Container>
-    </div>
+    </StyledApp>
   );
 }
 
