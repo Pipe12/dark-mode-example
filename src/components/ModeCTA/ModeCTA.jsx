@@ -1,10 +1,13 @@
-import { StyledModeCTA, StyledMoonIcon } from "./StyledModeCTA";
+import { StyledModeCTA, StyledMoonIcon, StyledSunIcon } from "./StyledModeCTA";
 
-const ModeCTA = ({ toggleTheme }) => {
+const ModeCTA = ({ toggleTheme, theme }) => {
   return (
     <StyledModeCTA onClick={toggleTheme}>
-      <StyledMoonIcon />
-      Dark Mode
+      {
+        theme === 'dark'
+        ? <><StyledMoonIcon />Dark Mode</>
+        : <><StyledSunIcon /> Light Mode</> 
+      }
     </StyledModeCTA>
   )
 }
