@@ -9,6 +9,6 @@ const StyledApp = styled.div`
   justify-content: center;
   align-content: center;
 
-  background-color: var(--dark-mode-background);
+  background-color: var(${({ theme }) => theme.backgroundBody});
 `
 export default StyledApp;

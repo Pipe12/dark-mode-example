@@ -4,7 +4,7 @@ import { BsMoon } from 'react-icons/bs';
 export const StyledModeCTA = styled.button`
   background-color: transparent;
   border: none;
-  color: var(--dark-mode-text);
+  color: var(${({ theme }) => theme.text});
   font-size: 12px;
   display: flex;
   align-items: center;
