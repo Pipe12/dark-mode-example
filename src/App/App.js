@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import StyledApp from './StyledApp';
 import Container from '../components/Container/Container';
 import Header from '../components/Header/Header';
@@ -6,13 +7,21 @@ import { darkTheme, lightTheme } from '../utils/themes';
 
 function App() {
 
-  console.log(darkTheme, lightTheme);
+  const [theme, setTheme] = useState('dark');
+
+  const toggleTheme = () => {
+    if (theme === 'dark') {
+      setTheme('light');
+    } else {
+      setTheme('dark');
+    }
+  }
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <StyledApp>
         <Container>
-          <Header />
+          <Header toggleTheme={toggleTheme}/>
         </Container>
       </StyledApp>
     </ThemeProvider>

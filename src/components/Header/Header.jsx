@@ -2,11 +2,11 @@ import StyledHeader from './StyledHeader';
 import HeaderTitle from '../HeaderTitle/HeaderTitle';
 import ModeCTA from '../ModeCTA/ModeCTA';
 
-const Header = ({ children }) => {
+const Header = ({ toggleTheme }) => {
   return (
     <StyledHeader>
       <HeaderTitle />
-      <ModeCTA />
+      <ModeCTA toggleTheme={toggleTheme}/>
     </StyledHeader>
   )
 }

@@ -1,8 +1,8 @@
 import { StyledModeCTA, StyledMoonIcon } from "./StyledModeCTA";
 
-const ModeCTA = () => {
+const ModeCTA = ({ toggleTheme }) => {
   return (
-    <StyledModeCTA>
+    <StyledModeCTA onClick={toggleTheme}>
       <StyledMoonIcon />
       Dark Mode
     </StyledModeCTA>
