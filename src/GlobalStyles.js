@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
 :root {
   --dark-blue: hsl(209, 23%, 22%);
   --darker-blue: hsl(207, 26%, 17%);
@@ -26,3 +29,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+`
+
+export default GlobalStyles;
