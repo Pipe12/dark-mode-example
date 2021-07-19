@@ -196,6 +196,24 @@ function App() {
 
 export default App;
 ```
+Aplicandolo en el componente
+
+```javaScript
+.App {
+  border: 1px solid purple;
+
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  background-color: var(--dark-mode-background);
+}
+```
+
 ## Como usar este repositorio
 
 Este repo tiene 6 ramas y en cada se realiza un paso para lograr implementar la funcionalidad de Dark Mode.
